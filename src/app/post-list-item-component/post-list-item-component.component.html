@@ -1,0 +1,13 @@
+
+
+<div [ngStyle]="{'background-color':getColor()}" class="list-group-item"
+    >
+    <div class="date">{{ postCreate_at | date:'short' }}</div>
+    <h1> {{ postTitle }}</h1><br>
+    <span>{{ postContent }}</span><br>
+    
+    <button class="btn btn-success" (click)="onLoved()">Love it</button>
+    <button class="btn btn-danger noLove" (click)="onUnloved()" >Don't love it</button>
+    
+</div>
+    
